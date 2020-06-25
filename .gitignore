@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/KhV.MongoDb/bin/Debug/netcoreapp2.1
+/KhV.MongoDb/obj
+/KhV.Ultis/bin/Debug/netcoreapp2.1
+/KhV.Ultis/obj
+/KhV.WebApi/bin/Debug/netcoreapp2.1
+/KhV.WebApi/Logging
+/KhV.WebApi/obj
