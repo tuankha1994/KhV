@@ -52,8 +52,8 @@ namespace KhV.WebApi.Models
     {
         public string Sku { get; set; }
         public string Name { get; set; }
-        public decimal PriceFrom { get; set; }
-        public decimal PriceTo { get; set; }
+        public decimal? PriceFrom { get; set; }
+        public decimal? PriceTo { get; set; }
         public string Description { get; set; }
     }
 }
