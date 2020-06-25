@@ -134,13 +134,24 @@ namespace KhV.WebApi.Controllers
                 {
                     Id = idMax + 1,
                     Sku = req.Sku,
+                    Price = req.Price,
                     Name = req.Name,
                     Description = req.Description,
                     CreatedDate = DateTime.Now,
                     ModifiedDate = DateTime.Now
                 };
                 var p = await ProductRepo.AddSync(pr);
-                return Ok(pr);
+                var res = new ProductDto
+                {
+                    Id = p.Id,
+                    Sku = p.Sku,
+                    Name = p.Name,
+                    Price = p.Price,
+                    Description = p.Description,
+                    CreatedDate = p.CreatedDate,
+                    UpdatedDate = p.ModifiedDate
+                };
+                return Ok(res);
             }
             catch (Exception ex)
             {
